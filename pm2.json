@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name": "fp-feedback",
+    "script": "./bin/www",
+    "instances": 1,
+    "exec_mode": "cluster",
+    "env": {
+      "PORT": 3000,
+      "NODE_ENV": "development",
+      "NODE_OPTIONS": "--inspect --inspect-port=9232"
+    },
+    "env_production" : {
+      "PORT": 3000,
+      "NODE_ENV": "production"
+    }
+  }]
+}
